@@ -1,0 +1,29 @@
+@import "../variables.modules";
+
+
+footer {
+  color: $dark;
+}
+
+.dark {
+  background-color: $dark;
+  background: url('../img/dark.gif');
+  color: $white;
+  transition: all 400ms;
+
+  a, li {
+    color: white
+  }
+  
+}
+
+.light {
+  background-color: $white;
+  background: url('../img/white.gif');
+  color: $white;
+  transition: all 400ms;
+
+  a, li {
+    color: white
+  }
+}

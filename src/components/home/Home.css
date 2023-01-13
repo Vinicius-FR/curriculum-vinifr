@@ -1,0 +1,39 @@
+.upload-btn:hover {
+    color: gray;
+}
+
+.upload-btn {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    color: gray;
+}
+
+.download-btn {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrong-password {
+    color: orange;
+    text-align: center;
+    padding: 1em;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.correct-password {
+    color: green;
+    text-align: center;
+    padding: 1em;
+    font-size: 10px;
+    font-weight: bold;
+}
