@@ -123,7 +123,10 @@ export default function Home() {
                   <SocialIcon link={social.link} icon={social.icon} />
                ))}
 
-               <center style={{position: 'relative', top: -150, left: 100}}>
+               
+            </Box>
+
+            <center style={{position: 'relative', top: 20, left: 0}}>
 
                   <Box border={'2px solid black'} borderRadius={'25px'} padding={'-10px'} style={{background: info.gradient}}>
 
@@ -136,21 +139,20 @@ export default function Home() {
 
                   </Box>
                   
-                  <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                  <Popup trigger={buttonPopup} setTrigger={setButtonPopup} style={{justifyContent:'center', alignItems:'center'}}>
                      <Box border={'2px solid black'} borderRadius={'25px'} style={{background: info.gradient}}>
 
                         <div>
-                           <h1 style={{fontSize: 20, padding: 10, color: 'white'}}>Insert the password to upload curriculum</h1>
-                           <input type="password" onChange={authenticate} />
+                           <h1 className='insert-password' style={{fontSize:20, padding: 10}}>Insert the password to upload curriculum</h1>
+                           <input type="password" onChange={authenticate} style={{textAlign: 'center'}}/>
                         </div>
 
                         <WrongPasswordPopup trigger={!authenticated} setTrigger={setAuthenticated}>
 
                         </WrongPasswordPopup>
 
-
                         <div style={{position: 'relative', top: -10}}>
-                           <input type="file" onChange={upload} />
+                           <input type="file" onChange={upload} style={{textAlign: 'center', marginTop: 20}}/>
                         </div>
 
                         <UploadFailedPopup trigger={uploadFailed} setTrigger={setUploadFailed}>
@@ -177,7 +179,6 @@ export default function Home() {
                   </Box>
                   
                </center>
-            </Box>
          </Box>
       </Box>
    )
